@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: task
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: al123456
+      MYSQL_ROOT_PASSWORD: al123456
+    volumes:
+      - ./mysql:/var/lib/mysql
