@@ -6,7 +6,7 @@ Sistema de gerenciamento de tarefas utilizando o framework Laravel.
 
 ## Como rodar o projeto
 
-### Inicair banco de dados Mysql no Docker
+### Iniciar banco de dados Mysql no Docker
 
 É nessesário ter o docker instalado
 
@@ -14,7 +14,21 @@ Sistema de gerenciamento de tarefas utilizando o framework Laravel.
 $ docker-compose up
 ```
 
-### Executar Projeto
+### Instalar dependências
+
+Necessário Compose instalado
+
+```bash
+$ composer install
+```
+
+### Aplicar migrations
+
+```bash
+$ php artisan migrate
+```
+
+### Executar
 
 ```bash
 $ php artisan serve
